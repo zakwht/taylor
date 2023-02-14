@@ -11,8 +11,9 @@ def filter:
   | map(. + { album_index: .album_index | tonumber })
   | sort_by(.bonus)
   | sort_by(.album_index)
-  | map([.id, .name, .album, .album_index, .altversion, .single, .bonus, .vault, .tv])
+  | map([.id, .name, .position, .album, .album_index, .altversion, .single, .bonus, .vault, .tv])
   | map(@csv) 
-  | .[];
+  | .[]
+  | gsub("’";"'");
 
 filter

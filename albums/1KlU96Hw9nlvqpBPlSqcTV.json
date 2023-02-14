@@ -3,132 +3,154 @@
     "id": "5zyCYmiaVE5y26EZuwZbsw",
     "name": "State Of Grace",
     "album": "Red (Deluxe Edition)",
-    "album_index": "4"
+    "album_index": "4",
+    "position": 13
   },
   {
     "id": "1RvQQGwaPipiNgz8RXAKA8",
     "name": "Red",
     "album": "Red (Deluxe Edition)",
-    "album_index": "4"
+    "album_index": "4",
+    "position": 6
   },
   {
     "id": "0XfOV7qY3834QpFVwOb6CC",
     "name": "Treacherous",
     "album": "Red (Deluxe Edition)",
-    "album_index": "4"
+    "album_index": "4",
+    "position": 0
   },
   {
     "id": "0ciHz919LVKoH4zgxyMPZ9",
     "name": "I Knew You Were Trouble.",
     "album": "Red (Deluxe Edition)",
-    "album_index": "4"
+    "album_index": "4",
+    "position": 2
   },
   {
     "id": "1q3RiD1tIWUpGsNFADMlvl",
     "name": "All Too Well",
     "album": "Red (Deluxe Edition)",
-    "album_index": "4"
+    "album_index": "4",
+    "position": 80
   },
   {
     "id": "3bIxTsfeNMO7Nt2J3EUKrA",
     "name": "22",
     "album": "Red (Deluxe Edition)",
-    "album_index": "4"
+    "album_index": "4",
+    "position": 20
   },
   {
     "id": "31pEV5lPJi7btskZoUr2yu",
     "name": "I Almost Do",
     "album": "Red (Deluxe Edition)",
-    "album_index": "4"
+    "album_index": "4",
+    "position": 65
   },
   {
     "id": "1OYARuagDrpgNNQ4loO1Cs",
     "name": "We Are Never Ever Getting Back Together",
     "album": "Red (Deluxe Edition)",
-    "album_index": "4"
+    "album_index": "4",
+    "position": 1
   },
   {
     "id": "1x0J8LFX23d5h1zzuzZorc",
     "name": "Stay Stay Stay",
     "album": "Red (Deluxe Edition)",
-    "album_index": "4"
+    "album_index": "4",
+    "position": 91
   },
   {
     "id": "7vvIpJZye5cRR6De1LKM0m",
     "name": "The Last Time",
     "album": "Red (Deluxe Edition)",
-    "album_index": "4"
+    "album_index": "4",
+    "position": 0
   },
   {
     "id": "5d2Kn9oAAh9S2EbyCo1i52",
     "name": "Holy Ground",
     "album": "Red (Deluxe Edition)",
-    "album_index": "4"
+    "album_index": "4",
+    "position": 0
   },
   {
     "id": "5QKhg4r4Ibt0LVTmWEXTEg",
     "name": "Sad Beautiful Tragic",
     "album": "Red (Deluxe Edition)",
-    "album_index": "4"
+    "album_index": "4",
+    "position": 0
   },
   {
     "id": "2wtHlpYSgC7xEdD3DrSHNL",
     "name": "The Lucky One",
     "album": "Red (Deluxe Edition)",
-    "album_index": "4"
+    "album_index": "4",
+    "position": 0
   },
   {
     "id": "7gdwoOmi258QJq0hmQ4hto",
     "name": "Everything Has Changed",
     "album": "Red (Deluxe Edition)",
-    "album_index": "4"
+    "album_index": "4",
+    "position": 32
   },
   {
     "id": "0vqI4ZIMuifeKeItGiWbPj",
     "name": "Starlight",
     "album": "Red (Deluxe Edition)",
-    "album_index": "4"
+    "album_index": "4",
+    "position": 0
   },
   {
     "id": "48A0aShHlovDfTMucMrE66",
     "name": "Begin Again",
     "album": "Red (Deluxe Edition)",
-    "album_index": "4"
+    "album_index": "4",
+    "position": 7
   },
   {
     "id": "5AsmAjBSSQjRPWgAYIp8tm",
     "name": "The Moment I Knew",
     "album": "Red (Deluxe Edition)",
-    "album_index": "4"
+    "album_index": "4",
+    "position": 64
   },
   {
     "id": "4qyalTRMRH5YuEntvvMvq0",
     "name": "Come Back...Be Here",
     "album": "Red (Deluxe Edition)",
-    "album_index": "4"
+    "album_index": "4",
+    "position": 0
   },
   {
     "id": "6cf6rLb8qcklvJv90W6HCW",
     "name": "Girl At Home",
     "album": "Red (Deluxe Edition)",
-    "album_index": "4"
+    "album_index": "4",
+    "position": 0
   },
   {
     "id": "7BT9K9BDqq6HI2oWH5UMZQ",
-    "name": "Treacherous - Original Demo Recording",
+    "name": "Treacherous",
     "album": "Red (Deluxe Edition)",
-    "album_index": "4"
+    "album_index": "4",
+    "position": 0
   },
   {
     "id": "4mqgn90sCeVSYqcoftTQTd",
-    "name": "Red - Original Demo Recording",
+    "name": "Red",
     "album": "Red (Deluxe Edition)",
-    "album_index": "4"
+    "album_index": "4",
+    "position": 6
   },
   {
     "id": "5G9AVKld9q7DCrmoY42raf",
-    "name": "State Of Grace - Acoustic",
+    "name": "State Of Grace",
     "album": "Red (Deluxe Edition)",
-    "album_index": "4"
+    "album_index": "4",
+    "position": 13
   }
 ]

@@ -3,120 +3,140 @@
     "id": "4g2c7NoTWAOSYDy44l9nub",
     "name": "Lavender Haze",
     "album": "Midnights (3am Edition)",
-    "album_index": "12"
+    "album_index": "12",
+    "position": 2
   },
   {
     "id": "199E1RRrVmVTQqBXih5qRC",
     "name": "Maroon",
     "album": "Midnights (3am Edition)",
-    "album_index": "12"
+    "album_index": "12",
+    "position": 3
   },
   {
     "id": "02Zkkf2zMkwRGQjZ7T4p8f",
     "name": "Anti-Hero",
     "album": "Midnights (3am Edition)",
-    "album_index": "12"
+    "album_index": "12",
+    "position": 1
   },
   {
     "id": "6ADDIJxxqzM9LMpm78yzQG",
-    "name": "Snow On The Beach (feat. Lana Del Rey)",
+    "name": "Snow On The Beach",
     "album": "Midnights (3am Edition)",
-    "album_index": "12"
+    "album_index": "12",
+    "position": 4
   },
   {
     "id": "7gVWKBcfIW93YxNBi3ApIE",
     "name": "You're On Your Own, Kid",
     "album": "Midnights (3am Edition)",
-    "album_index": "12"
+    "album_index": "12",
+    "position": 8
   },
   {
     "id": "6Nl7KyvjkFncGsjB49SxLl",
     "name": "Midnight Rain",
     "album": "Midnights (3am Edition)",
-    "album_index": "12"
+    "album_index": "12",
+    "position": 5
   },
   {
     "id": "6C7OF1Jal7YkyjzyUG8vkK",
     "name": "Question...?",
     "album": "Midnights (3am Edition)",
-    "album_index": "12"
+    "album_index": "12",
+    "position": 7
   },
   {
     "id": "5yeuXkukVGuix3vmLu2BPJ",
     "name": "Vigilante Shit",
     "album": "Midnights (3am Edition)",
-    "album_index": "12"
+    "album_index": "12",
+    "position": 10
   },
   {
     "id": "0jvo9CjnbR0lYUDTSNTMiu",
     "name": "Bejeweled",
     "album": "Midnights (3am Edition)",
-    "album_index": "12"
+    "album_index": "12",
+    "position": 6
   },
   {
     "id": "43q586vP8gGkYypKoSddhl",
     "name": "Labyrinth",
     "album": "Midnights (3am Edition)",
-    "album_index": "12"
+    "album_index": "12",
+    "position": 14
   },
   {
     "id": "5oqDgw5VGBln5dSIOPWyBq",
     "name": "Karma",
     "album": "Midnights (3am Edition)",
-    "album_index": "12"
+    "album_index": "12",
+    "position": 9
   },
   {
     "id": "3zmwONxswBAzGwExPugSLN",
     "name": "Sweet Nothing",
     "album": "Midnights (3am Edition)",
-    "album_index": "12"
+    "album_index": "12",
+    "position": 15
   },
   {
     "id": "56hioFjQ0DXrdn04hZcFgG",
     "name": "Mastermind",
     "album": "Midnights (3am Edition)",
-    "album_index": "12"
+    "album_index": "12",
+    "position": 13
   },
   {
     "id": "3UMrglJeju5yWyYIW6o99b",
     "name": "The Great War",
     "album": "Midnights (3am Edition)",
-    "album_index": "12"
+    "album_index": "12",
+    "position": 26
   },
   {
     "id": "0BiqmkasE5FdrChwKfVp8X",
     "name": "Bigger Than The Whole Sky",
     "album": "Midnights (3am Edition)",
-    "album_index": "12"
+    "album_index": "12",
+    "position": 21
   },
   {
     "id": "7712gjoih4QoDbXpljEk21",
     "name": "Paris",
     "album": "Midnights (3am Edition)",
-    "album_index": "12"
+    "album_index": "12",
+    "position": 32
   },
   {
     "id": "5kiZGSxgqPdv6rbqL9THdd",
     "name": "High Infidelity",
     "album": "Midnights (3am Edition)",
-    "album_index": "12"
+    "album_index": "12",
+    "position": 33
   },
   {
     "id": "6wAFvJPpTZVirBKGZ4EnMW",
     "name": "Glitch",
     "album": "Midnights (3am Edition)",
-    "album_index": "12"
+    "album_index": "12",
+    "position": 41
   },
   {
     "id": "0aV5uARAknQgYhBaK944FP",
     "name": "Would've, Could've, Should've",
     "album": "Midnights (3am Edition)",
-    "album_index": "12"
+    "album_index": "12",
+    "position": 20
   },
   {
     "id": "3QF5RsWzK1lCvf2o2cY65P",
     "name": "Dear Reader",
     "album": "Midnights (3am Edition)",
-    "album_index": "12"
+    "album_index": "12",
+    "position": 45
   }
 ]

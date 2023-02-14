@@ -45,6 +45,8 @@ get_tracks() {
       '.items | [.[] | {id: .id, name: .name, album: $album_name, album_index: $album_index}]' \
       > "albums/$album_id.json"
   done < album-ids.txt
+
+  node fetch.js
 }
 
 generate_csv() {
@@ -57,7 +59,7 @@ generate_csv() {
   track_bonus=$(<track-bonus.txt)
   track_single=$(<track-single.txt)
 
-  echo "id,name,album,albumIndex,isAltVersion,isSingle,isBonus,isVault,isTv" > all-tracks.csv
+  echo "id,name,peak,album,albumIndex,isAltVersion,isSingle,isBonus,isVault,isTv" > all-tracks.csv
   jq -n -r \
     --arg track_altversion "$track_altversion" \
     --arg track_bonus "$track_bonus" \

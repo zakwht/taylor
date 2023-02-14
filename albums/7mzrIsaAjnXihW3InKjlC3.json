@@ -3,90 +3,105 @@
     "id": "0Om9WAB5RS09L80DyOfTNa",
     "name": "Tim McGraw",
     "album": "Taylor Swift",
-    "album_index": "1"
+    "album_index": "1",
+    "position": 40
   },
   {
     "id": "32mVHdy0bi1XKgr0ajsBlG",
     "name": "Picture To Burn",
     "album": "Taylor Swift",
-    "album_index": "1"
+    "album_index": "1",
+    "position": 28
   },
   {
     "id": "7zMcNqs55Mxer82bvZFkpg",
-    "name": "Teardrops On My Guitar - Radio Single Remix",
+    "name": "Teardrops On My Guitar",
     "album": "Taylor Swift",
-    "album_index": "1"
+    "album_index": "1",
+    "position": 13
   },
   {
     "id": "73OX8GdpOeGzKC6OvGSbsv",
     "name": "A Place in this World",
     "album": "Taylor Swift",
-    "album_index": "1"
+    "album_index": "1",
+    "position": 0
   },
   {
     "id": "7an1exwMnfYRcdVQm0yDev",
     "name": "Cold As You",
     "album": "Taylor Swift",
-    "album_index": "1"
+    "album_index": "1",
+    "position": 0
   },
   {
     "id": "2QA3IixpRcKyOdG7XDzRgv",
     "name": "The Outside",
     "album": "Taylor Swift",
-    "album_index": "1"
+    "album_index": "1",
+    "position": 0
   },
   {
     "id": "6K0CJLVXqbGMeJSmJ4ENKK",
     "name": "Tied Together with a Smile",
     "album": "Taylor Swift",
-    "album_index": "1"
+    "album_index": "1",
+    "position": 0
   },
   {
     "id": "2ZoOmCSgj0ypVAmGd1ve4y",
     "name": "Stay Beautiful",
     "album": "Taylor Swift",
-    "album_index": "1"
+    "album_index": "1",
+    "position": 0
   },
   {
     "id": "16MVSD0mGI4RMQT83Qzm69",
     "name": "Should've Said No",
     "album": "Taylor Swift",
-    "album_index": "1"
+    "album_index": "1",
+    "position": 33
   },
   {
     "id": "2QrQCMel6v2JiLxqrg4p2O",
     "name": "Mary's Song (Oh My My My)",
     "album": "Taylor Swift",
-    "album_index": "1"
+    "album_index": "1",
+    "position": 0
   },
   {
     "id": "15DeqWWQB4dcEWzJg15VrN",
     "name": "Our Song",
     "album": "Taylor Swift",
-    "album_index": "1"
+    "album_index": "1",
+    "position": 16
   },
   {
     "id": "0JIdBrXGSJXS72zjF9ss9u",
     "name": "I'm Only Me When I'm With You",
     "album": "Taylor Swift",
-    "album_index": "1"
+    "album_index": "1",
+    "position": 0
   },
   {
     "id": "5OOd01o2YS1QFwdpVLds3r",
     "name": "Invisible",
     "album": "Taylor Swift",
-    "album_index": "1"
+    "album_index": "1",
+    "position": 0
   },
   {
     "id": "1spLfUJxtyVyiKKTegQ2r4",
     "name": "A Perfectly Good Heart",
     "album": "Taylor Swift",
-    "album_index": "1"
+    "album_index": "1",
+    "position": 0
   },
   {
     "id": "4pJi1rVt9GNegU9kywjg4z",
-    "name": "Teardrops on My Guitar - Pop Version",
+    "name": "Teardrops on My Guitar",
     "album": "Taylor Swift",
-    "album_index": "1"
+    "album_index": "1",
+    "position": 13
   }
 ]

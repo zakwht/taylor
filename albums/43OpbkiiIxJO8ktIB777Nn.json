@@ -3,114 +3,133 @@
     "id": "08gavXombT6KR0af88i9tA",
     "name": "Jump Then Fall",
     "album": "Fearless Platinum Edition",
-    "album_index": "2"
+    "album_index": "2",
+    "position": 10
   },
   {
     "id": "2IZ00ed83ygPIiacYScWUE",
     "name": "Untouchable",
     "album": "Fearless Platinum Edition",
-    "album_index": "2"
+    "album_index": "2",
+    "position": 19
   },
   {
     "id": "46HGgtwmmuEB8mvDCyjyAc",
-    "name": "Forever & Always - Piano Version",
+    "name": "Forever & Always",
     "album": "Fearless Platinum Edition",
-    "album_index": "2"
+    "album_index": "2",
+    "position": 34
   },
   {
     "id": "4pl5zcqCv4vc3cB7M4MZ6f",
     "name": "Come In With The Rain",
     "album": "Fearless Platinum Edition",
-    "album_index": "2"
+    "album_index": "2",
+    "position": 30
   },
   {
     "id": "14Bljc3pOOG0xQX3wqhLN9",
     "name": "SuperStar",
     "album": "Fearless Platinum Edition",
-    "album_index": "2"
+    "album_index": "2",
+    "position": 26
   },
   {
     "id": "0xvsgzM8AtBtRHZm5rav8A",
     "name": "The Other Side Of The Door",
     "album": "Fearless Platinum Edition",
-    "album_index": "2"
+    "album_index": "2",
+    "position": 23
   },
   {
     "id": "3F6czr26ZwGU5O5CHY04Ma",
     "name": "Fearless",
     "album": "Fearless Platinum Edition",
-    "album_index": "2"
+    "album_index": "2",
+    "position": 9
   },
   {
     "id": "3M0w3fhdXByHLCNAoi5c9G",
     "name": "Fifteen",
     "album": "Fearless Platinum Edition",
-    "album_index": "2"
+    "album_index": "2",
+    "position": 23
   },
   {
     "id": "0kN3oXYWWAk1uC0y2WoyOE",
     "name": "Love Story",
     "album": "Fearless Platinum Edition",
-    "album_index": "2"
+    "album_index": "2",
+    "position": 4
   },
   {
     "id": "6wcFdMmiDscAhZJrcVFumx",
     "name": "Hey Stephen",
     "album": "Fearless Platinum Edition",
-    "album_index": "2"
+    "album_index": "2",
+    "position": 94
   },
   {
     "id": "4jPtq9shRdUv8Zjr0a5xkD",
     "name": "White Horse",
     "album": "Fearless Platinum Edition",
-    "album_index": "2"
+    "album_index": "2",
+    "position": 13
   },
   {
     "id": "3as6Wz3mwbTnusWhZjTUNr",
     "name": "You Belong With Me",
     "album": "Fearless Platinum Edition",
-    "album_index": "2"
+    "album_index": "2",
+    "position": 2
   },
   {
     "id": "6S9G7J3EB1ZY0rrZPwsBg5",
     "name": "Breathe",
     "album": "Fearless Platinum Edition",
-    "album_index": "2"
+    "album_index": "2",
+    "position": 87
   },
   {
     "id": "4XrP7vKBjKLEYlRZdb0Ygr",
     "name": "Tell Me Why",
     "album": "Fearless Platinum Edition",
-    "album_index": "2"
+    "album_index": "2",
+    "position": 0
   },
   {
     "id": "6HWYtS215rxaaMjvpyG18W",
     "name": "You're Not Sorry",
     "album": "Fearless Platinum Edition",
-    "album_index": "2"
+    "album_index": "2",
+    "position": 11
   },
   {
     "id": "77VotUUL79U10TAnYdqwvr",
     "name": "The Way I Loved You",
     "album": "Fearless Platinum Edition",
-    "album_index": "2"
+    "album_index": "2",
+    "position": 72
   },
   {
     "id": "1zxrcAk6eiytfavqriMcKT",
     "name": "Forever & Always",
     "album": "Fearless Platinum Edition",
-    "album_index": "2"
+    "album_index": "2",
+    "position": 34
   },
   {
     "id": "5YbZZ2gYfvW1UvHHF4pVaD",
     "name": "The Best Day",
     "album": "Fearless Platinum Edition",
-    "album_index": "2"
+    "album_index": "2",
+    "position": 0
   },
   {
     "id": "0RdcBnAXyH2YZZvcBVu2k6",
     "name": "Change",
     "album": "Fearless Platinum Edition",
-    "album_index": "2"
+    "album_index": "2",
+    "position": 10
   }
 ]

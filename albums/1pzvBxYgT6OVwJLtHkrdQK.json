@@ -3,102 +3,119 @@
     "id": "4pfrrhvplbJZAIsfosGWQP",
     "name": "the 1",
     "album": "folklore (deluxe version)",
-    "album_index": "8"
+    "album_index": "8",
+    "position": 4
   },
   {
     "id": "0KRYCBwIpWYFNrXOmXbyUh",
     "name": "cardigan",
     "album": "folklore (deluxe version)",
-    "album_index": "8"
+    "album_index": "8",
+    "position": 1
   },
   {
     "id": "2olxzvoFI9IpxqFeUv7WOX",
     "name": "the last great american dynasty",
     "album": "folklore (deluxe version)",
-    "album_index": "8"
+    "album_index": "8",
+    "position": 13
   },
   {
     "id": "5S4aYQAJOwJMAamANWlICO",
-    "name": "exile (feat. Bon Iver)",
+    "name": "exile",
     "album": "folklore (deluxe version)",
-    "album_index": "8"
+    "album_index": "8",
+    "position": 6
   },
   {
     "id": "5P2bHCDM2tsgIaYWsZMhu5",
     "name": "my tears ricochet",
     "album": "folklore (deluxe version)",
-    "album_index": "8"
+    "album_index": "8",
+    "position": 16
   },
   {
     "id": "2I8YAEA1VmCuP1wkJHMpTw",
     "name": "mirrorball",
     "album": "folklore (deluxe version)",
-    "album_index": "8"
+    "album_index": "8",
+    "position": 26
   },
   {
     "id": "76mOLcXOjOEhyY4mMF1l3r",
     "name": "seven",
     "album": "folklore (deluxe version)",
-    "album_index": "8"
+    "album_index": "8",
+    "position": 35
   },
   {
     "id": "6nK2pIKFcRc5frrZKHgsiT",
     "name": "august",
     "album": "folklore (deluxe version)",
-    "album_index": "8"
+    "album_index": "8",
+    "position": 23
   },
   {
     "id": "7cm50Lw03k6VvRauJtkyTj",
     "name": "this is me trying",
     "album": "folklore (deluxe version)",
-    "album_index": "8"
+    "album_index": "8",
+    "position": 39
   },
   {
     "id": "6DrLROM5MG9bxWHeEG5elq",
     "name": "illicit affairs",
     "album": "folklore (deluxe version)",
-    "album_index": "8"
+    "album_index": "8",
+    "position": 44
   },
   {
     "id": "2ehRU518I0hYqMGQnk4lDY",
     "name": "invisible string",
     "album": "folklore (deluxe version)",
-    "album_index": "8"
+    "album_index": "8",
+    "position": 37
   },
   {
     "id": "0RP1kqoSPkVXsKiQNhMKzV",
     "name": "mad woman",
     "album": "folklore (deluxe version)",
-    "album_index": "8"
+    "album_index": "8",
+    "position": 47
   },
   {
     "id": "1EXa37LpSvi3OQ9UYQ28rD",
     "name": "epiphany",
     "album": "folklore (deluxe version)",
-    "album_index": "8"
+    "album_index": "8",
+    "position": 57
   },
   {
     "id": "3IhtE4fkytdrtEfV34UzkD",
     "name": "betty",
     "album": "folklore (deluxe version)",
-    "album_index": "8"
+    "album_index": "8",
+    "position": 42
   },
   {
     "id": "6JlI8Ay77m4nJvZTHvfT1J",
     "name": "peace",
     "album": "folklore (deluxe version)",
-    "album_index": "8"
+    "album_index": "8",
+    "position": 58
   },
   {
     "id": "0YeDG5HnKnG7jpArkzsSPa",
     "name": "hoax",
     "album": "folklore (deluxe version)",
-    "album_index": "8"
+    "album_index": "8",
+    "position": 71
   },
   {
     "id": "0eFQWVz0qIxDOvhLpZ40P7",
-    "name": "the lakes - bonus track",
+    "name": "the lakes",
     "album": "folklore (deluxe version)",
-    "album_index": "8"
+    "album_index": "8",
+    "position": 0
   }
 ]

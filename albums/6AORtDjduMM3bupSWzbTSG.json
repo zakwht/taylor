@@ -3,102 +3,119 @@
     "id": "2gVhfX2Gy1T9kDuS9azrF7",
     "name": "willow",
     "album": "evermore (deluxe version)",
-    "album_index": "9"
+    "album_index": "9",
+    "position": 1
   },
   {
     "id": "1gcyHQpBQ1lfXGdhZmWrHP",
     "name": "champagne problems",
     "album": "evermore (deluxe version)",
-    "album_index": "9"
+    "album_index": "9",
+    "position": 21
   },
   {
     "id": "3Dby3p1m6IOZn2gIIqECgK",
     "name": "gold rush",
     "album": "evermore (deluxe version)",
-    "album_index": "9"
+    "album_index": "9",
+    "position": 40
   },
   {
     "id": "6sQckd3Z8NPxVVKUnavY1F",
-    "name": "‘tis the damn season",
+    "name": "'tis the damn season",
     "album": "evermore (deluxe version)",
-    "album_index": "9"
+    "album_index": "9",
+    "position": 39
   },
   {
     "id": "6lCvK2AR2uOKkVFCVlAzzm",
     "name": "tolerate it",
     "album": "evermore (deluxe version)",
-    "album_index": "9"
+    "album_index": "9",
+    "position": 45
   },
   {
     "id": "6uwfVkaOM1mcMkFmSn35ix",
-    "name": "no body, no crime (feat. HAIM)",
+    "name": "no body, no crime",
     "album": "evermore (deluxe version)",
-    "album_index": "9"
+    "album_index": "9",
+    "position": 34
   },
   {
     "id": "55Vf4bimc1Rtfg0PAQRAo2",
     "name": "happiness",
     "album": "evermore (deluxe version)",
-    "album_index": "9"
+    "album_index": "9",
+    "position": 52
   },
   {
     "id": "66tOfHVH3aUrscg8vExRV4",
     "name": "dorothea",
     "album": "evermore (deluxe version)",
-    "album_index": "9"
+    "album_index": "9",
+    "position": 67
   },
   {
     "id": "2awNGIJHodfLZSClB3PYhz",
-    "name": "coney island (feat. The National)",
+    "name": "coney island",
     "album": "evermore (deluxe version)",
-    "album_index": "9"
+    "album_index": "9",
+    "position": 63
   },
   {
     "id": "43Ykum9T72UOPhBN31grpN",
     "name": "ivy",
     "album": "evermore (deluxe version)",
-    "album_index": "9"
+    "album_index": "9",
+    "position": 61
   },
   {
     "id": "52OkpDsU6MmPx1AwGOb6Ap",
     "name": "cowboy like me",
     "album": "evermore (deluxe version)",
-    "album_index": "9"
+    "album_index": "9",
+    "position": 71
   },
   {
     "id": "5VYWxXUpxuxEmCqMLDqICo",
     "name": "long story short",
     "album": "evermore (deluxe version)",
-    "album_index": "9"
+    "album_index": "9",
+    "position": 68
   },
   {
     "id": "5uICWmZTLkpEVbK22PBP6e",
     "name": "marjorie",
     "album": "evermore (deluxe version)",
-    "album_index": "9"
+    "album_index": "9",
+    "position": 75
   },
   {
     "id": "6a8aUhYbaQBUI8PcJ5ZmQ6",
     "name": "closure",
     "album": "evermore (deluxe version)",
-    "album_index": "9"
+    "album_index": "9",
+    "position": 82
   },
   {
     "id": "6Wlq9rqkxrqj5Kls4Kw14H",
-    "name": "evermore (feat. Bon Iver)",
+    "name": "evermore",
     "album": "evermore (deluxe version)",
-    "album_index": "9"
+    "album_index": "9",
+    "position": 57
   },
   {
     "id": "3zwMVvkBe2qIKDObWgXw4N",
-    "name": "right where you left me - bonus track",
+    "name": "right where you left me",
     "album": "evermore (deluxe version)",
-    "album_index": "9"
+    "album_index": "9",
+    "position": 0
   },
   {
     "id": "1kdWw77ZpYOkhxeuhzU1j6",
-    "name": "it’s time to go - bonus track",
+    "name": "it's time to go",
     "album": "evermore (deluxe version)",
-    "album_index": "9"
+    "album_index": "9",
+    "position": 0
   }
 ]
