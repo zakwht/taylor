@@ -4,61 +4,67 @@
 source .env
 basic=$(echo "$CLIENT_ID:$SECRET" | base64)
 
-# get token
-# token=$(curl -d "grant_type=client_credentials" \
-#   --request POST \
-#   --url https://accounts.spotify.com/api/token \
-#   --header "Authorization: Basic ${basic%?}" \
-#   --header "Content-Type: application/x-www-form-urlencoded" \
-#   | jq -r .access_token)
+get_token() {
+  curl -d "grant_type=client_credentials" \
+    --request POST \
+    --url https://accounts.spotify.com/api/token \
+    --header "Authorization: Basic ${basic%?}" \
+    --header "Content-Type: application/x-www-form-urlencoded" \
+    | jq -r .access_token
+}
 
+get_album_ids() {
+  artist_id="06HL4z0CvFAxyc27GXpf02"
+  token=$(get_token)
+  curl --request GET \
+    --url "https://api.spotify.com/v1/artists/$artist_id/albums?limit=50&include_groups=album&market=CA" \
+    --header "Authorization: Bearer $token" \
+    --header "Content-Type: application/json" \
+    | jq '.items | [.[] | {id: .id, name: .name}]' \
+    > "album-ids.json"
+}
 
-artist_id="06HL4z0CvFAxyc27GXpf02"
+get_tracks() {
+  album_index=0
+  token=$(get_token)
+  while read album_id; do
+    ((album_index++))
+    album_name=$(curl --request GET \
+      --url "https://api.spotify.com/v1/albums/$album_id" \
+      --header "Authorization: Bearer $token" \
+      --header 'Content-Type: application/json' \
+      | jq -r .name)
 
-# get all albums (> album-ids.json)
-# curl --request GET \
-#   --url "https://api.spotify.com/v1/artists/$artist_id/albums?limit=50&include_groups=album&market=CA" \
-#   --header "Authorization: Bearer $token" \
-#   --header "Content-Type: application/json" \
-#   | jq '.items | [.[] | {id: .id, name: .name}]' \
-#   > "album-ids.json"
+    echo $album_index, $album_name
 
-# manual step: select ids from albums
+    curl --request GET \
+      --url "https://api.spotify.com/v1/albums/$album_id/tracks?limit=50" \
+      --header "Authorization: Bearer $token" \
+      --header "Content-Type: application/json" \
+      | jq --arg album_name "$album_name" --arg album_index "$album_index" \
+      '.items | [.[] | {id: .id, name: .name, album: $album_name, album_index: $album_index}]' \
+      > "albums/$album_id.json"
+  done < album-ids.txt
+}
 
-# album_index=0
-# while read album_id; do
-#   ((album_index++))
-#   album_name=$(curl --request GET \
-#     --url "https://api.spotify.com/v1/albums/$album_id" \
-#     --header "Authorization: Bearer $token" \
-#     --header 'Content-Type: application/json' \
-#     | jq -r .name)
+generate_csv() {
+  inputs=""
+  while read id; do 
+    inputs+="albums/$id.json "
+  done < album-ids.txt
 
-#   echo $album_index, $album_name
+  track_altversion=$(<track-altversion.txt)
+  track_bonus=$(<track-bonus.txt)
+  track_single=$(<track-single.txt)
 
-#   curl --request GET \
-#   --url "https://api.spotify.com/v1/albums/$album_id/tracks?limit=50" \
-#   --header "Authorization: Bearer $token" \
-#   --header "Content-Type: application/json" \
-#   | jq --arg album_name "$album_name" --arg album_index $album_index \
-#   '.items | [.[] | {id: .id, name: .name, album: $album_name, album_index: $album_index}]' \
-#   > "albums/$album_id.json"
-# done < album-ids.txt
+  echo "id,name,album,albumIndex,isAltVersion,isSingle,isBonus,isVault,isTv" > all-tracks.csv
+  jq -n -r \
+    --arg track_altversion "$track_altversion" \
+    --arg track_bonus "$track_bonus" \
+    --arg track_single "$track_single" \
+    -f filter.jq \
+    $inputs \
+    >> all-tracks.csv
+}
 
-for f in albums/*.json; do 
-  cat $f | jq -r '.[] | [.album_index, .album, .id, .name] | @csv' >> out.txt
-  # echo "$f"; 
-done
-
-# all_tracks=""
-# for f in albums/*.json; do 
-#   all_tracks+=$(cat $f | jq -r '.[] | [.album_index, .album, .id, .name] | @scv')
-# done
-
-# # jq '.[]' <<< $all_tracks
-# echo $all_tracks
-
-
-
-# sort into normal - then bonus - alt hidden
-
+generate_csv
