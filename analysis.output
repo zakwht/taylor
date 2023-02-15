@@ -158,7 +158,7 @@ F-statistic: 90.18 on 1 and 18 DF,  p-value: 1.967e-08
 
 ***Optimized Model***
 
-Modelling adjusted data, 135 items. 
+Modelling ranked data, 135 items. 
 	Uncharted song constant: 101 
 	Track position cutoff: 20 
 	Excluding singles 

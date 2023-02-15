@@ -53,17 +53,46 @@ make_adjusted_model <- function(uncharted_adj, cutoff, include_singles, include_
   return (list(summary(model), model, tracks))
 }
 
-plot_best_model <- function(generate_model, ranked=FALSE, filename=NULL) {
+heat_plot <- function(tracks, cuts) {
+  par(mar = c(0,0,0,0))
+  plot.new()
+  for (i in 1:length(tracks$mean)) { 
+    int <- 1 / length(tracks$mean)
+    row <- tracks[i,]
+    j <- int * row$album_pos
+    labs <- c("darkred", "red", "darkorange", "orange", "yellow", "white")
+    color <- labs[findInterval(row$mean, cuts)]
+
+    polygon(
+      c(0,1,1,0),
+      c(1-j, 1-j, (1+int)-j, (1+int)-j),
+      col=color
+    )
+    text(
+      0.5,
+      1 + ( 0.4 * int) - j,
+      if (row$mean == 101) "-" else round(row$mean,3)
+    ) 
+    text(0.04, 1 + ( 0.4 * int) - j, paste(i, ".", sep=""))
+  }
+}
+
+plot_best_model <- function(generate_model, ranked=FALSE, filename=NULL, default=FALSE) {
   cutoffs <- list(10, 16, 20, 1000)
   uncharted_adjs <- list(101, 120, 150, 200)
 
   models <- c()
-  for (ua in uncharted_adjs) {
-    for (c in cutoffs) {
-      for (s in 0:1) {
-        for (b in 0:1) {
-          r.squared <- generate_model(ua, c, s, b)[[1]]$r.squared
-          models <- append(models, c(r.squared, ua, c, s, b))
+  if (default) {
+    r.squared <- generate_model(101, 1000, 1, 1)[[1]]$r.squared
+    models <- append(models, c(r.squared, 101, 1000, 1, 1))
+  } else {
+    for (ua in uncharted_adjs) {
+      for (c in cutoffs) {
+        for (s in 0:1) {
+          for (b in 0:1) {
+            r.squared <- generate_model(ua, c, s, b)[[1]]$r.squared
+            models <- append(models, c(r.squared, ua, c, s, b))
+          }
         }
       }
     }
@@ -80,7 +109,14 @@ plot_best_model <- function(generate_model, ranked=FALSE, filename=NULL) {
   best.lm <- best.model[[2]]
   best.tracks <- best.model[[3]]
 
-  if (!is.null(filename)) jpeg(paste("plots/", filename, sep=""))
+  if (!is.null(filename)) jpeg(paste("plots/", filename, "-heat.jpg", sep=""))
+  heat_plot(
+    best.tracks, 
+    if (ranked) c(-Inf, 4, 5, 10, 15, 20, Inf) else c(-Inf, 20, 40, 60, 80, 100, Inf)
+  )
+  if (!is.null(filename)) suppress <- dev.off()
+
+  if (!is.null(filename)) jpeg(paste("plots/", filename, ".jpg", sep=""))
   plot(
     best.tracks$mean,
     ylab=paste("Average ", if (ranked) "(Ranked) " else "", "Peak Position", sep=""),
@@ -91,7 +127,8 @@ plot_best_model <- function(generate_model, ranked=FALSE, filename=NULL) {
   if (!is.null(filename)) suppress <- dev.off()
 }
 
-plot_best_model(make_model, FALSE, "standard.jpg")
-plot_best_model(make_adjusted_model, TRUE, "ranked.jpg")
+plot_best_model(make_model, FALSE, "standard")
+plot_best_model(make_adjusted_model, TRUE, "ranked")
+plot_best_model(make_model, FALSE, "all", default=TRUE)
 
 sink()
