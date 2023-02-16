@@ -53,14 +53,14 @@ make_adjusted_model <- function(uncharted_adj, cutoff, include_singles, include_
   return (list(summary(model), model, tracks))
 }
 
-heat_plot <- function(tracks, cuts) {
+heat_plot <- function(tracks, cuts, trackName=FALSE) {
   par(mar = c(0,0,0,0))
   plot.new()
   for (i in 1:length(tracks$mean)) { 
     int <- 1 / length(tracks$mean)
     row <- tracks[i,]
     j <- int * row$album_pos
-    labs <- c("darkred", "red", "darkorange", "orange", "yellow", "white")
+    labs <- c("darkred", "red", "orange", "yellow", "white")
     color <- labs[findInterval(row$mean, cuts)]
 
     polygon(
@@ -69,11 +69,16 @@ heat_plot <- function(tracks, cuts) {
       col=color
     )
     text(
-      0.5,
+      if (trackName) 0.9 else 0.5,
       1 + ( 0.4 * int) - j,
       if (row$mean == 101) "-" else round(row$mean,3)
     ) 
-    text(0.04, 1 + ( 0.4 * int) - j, paste(i, ".", sep=""))
+    text(
+      0.04,
+      1 + ( 0.4 * int) - j,
+      paste(i, ". ", if (trackName) row$name else "", sep=""),
+      pos=4
+    )
   }
 }
 
@@ -100,11 +105,11 @@ plot_best_model <- function(generate_model, ranked=FALSE, filename=NULL, default
 
   models <- data.frame(t(array(models, dim=c(5,64))))
   dimnames(models)[[2]]<- c("r.squared","uncharted","cutoff","singles","bonus")
-  print(models)
+  if (!default) print(models)
 
-  cat("\n***Optimized Model***\n\n")
+  if (!default) cat("\n***Optimized Model***\n\n")
   best <- head(models[order(-models$r.squared),],1)
-  best.model <- generate_model(best$uncharted, best$cutoff, best$singles, best$bonus, TRUE)
+  best.model <- generate_model(best$uncharted, best$cutoff, best$singles, best$bonus, !default)
   best.coefficients <- best.model[[1]]$coefficients[, "Estimate"]
   best.lm <- best.model[[2]]
   best.tracks <- best.model[[3]]
@@ -112,7 +117,7 @@ plot_best_model <- function(generate_model, ranked=FALSE, filename=NULL, default
   if (!is.null(filename)) jpeg(paste("plots/", filename, "-heat.jpg", sep=""))
   heat_plot(
     best.tracks, 
-    if (ranked) c(-Inf, 4, 5, 10, 15, 20, Inf) else c(-Inf, 20, 40, 60, 80, 100, Inf)
+    if (ranked) c(-Inf, 5, 10, 15, 20, Inf) else if (default) c(-Inf, 21, 40, 60, 100, Inf) else c(-Inf, 20, 50, 75, 100, Inf)
   )
   if (!is.null(filename)) suppress <- dev.off()
 
@@ -127,8 +132,21 @@ plot_best_model <- function(generate_model, ranked=FALSE, filename=NULL, default
   if (!is.null(filename)) suppress <- dev.off()
 }
 
+album_heat_maps <- function() {
+  all_tracks <- subset(data, isAltVersion == 0) %>% group_by(album) %>% mutate(mean = peak) %>% arrange(albumIndex) %>% mutate(album_pos = row_number(album))
+  all_tracks$mean <- replace(all_tracks$mean, all_tracks$mean<1, 101)
+
+  for (i in unique(tracks$albumIndex)) {
+    album_tracks <- subset(all_tracks, albumIndex == i)
+    jpeg(paste("plots/albums/", sprintf("%02s", i), ".jpg", sep=""))
+    heat_plot(album_tracks, c(-Inf, 1.1, 10.1, 40.1, 100.1, Inf), TRUE)
+    supress <- dev.off()
+  }
+}
+
 plot_best_model(make_model, FALSE, "standard")
 plot_best_model(make_adjusted_model, TRUE, "ranked")
 plot_best_model(make_model, FALSE, "all", default=TRUE)
+album_heat_maps()
 
 sink()
